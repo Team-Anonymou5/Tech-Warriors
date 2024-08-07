@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div className="home">
       <header>
-        <h1>Hackathon Portal</h1>
+        <h1>SkillsRanker</h1>
       </header>
       <div className="categories">
         <button onClick={() => handleCategoryChange('hackathon')}>Hackathons</button>
@@ -40,7 +40,7 @@ const Home = () => {
         <Link to={`/all-${category}s`}>View All {category.charAt(0).toUpperCase() + category.slice(1)}s</Link>
       </div>
       <footer>
-        <p>&copy; 2024 Hackathon Portal</p>
+        <p>&copy; 2024 SkillsRanker</p>
       </footer>
     </div>
   );
