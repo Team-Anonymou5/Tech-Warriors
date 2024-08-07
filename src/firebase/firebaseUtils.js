@@ -1,5 +1,5 @@
 // src/firebase/firebaseUtils.js
-import { collection, getDocs, query, where } from 'firebase/firestore';
+import { collection, getDocs, query, where, addDoc } from 'firebase/firestore';
 import { db } from './config';
 
 const fetchAllHackathons = async (category) => {
@@ -14,4 +14,13 @@ const fetchAllHackathons = async (category) => {
   }
 };
 
-export { fetchAllHackathons };
+const addSubscription = async (email) => {
+  try {
+    const subscriptionCollection = collection(db, 'subscriptions');
+    await addDoc(subscriptionCollection, { email });
+  } catch (error) {
+    console.error('Error adding subscription:', error);
+  }
+};
+
+export { fetchAllHackathons, addSubscription };
