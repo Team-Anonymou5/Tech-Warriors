@@ -1,0 +1,44 @@
+/* Footer.css */
+
+@import './theme.css'; /* Import the theme colors */
+
+/* Apply the same background as the header */
+.footer-background {
+    background: var(--primary); /* Use background from theme */
+    color: var(--text); /* Use text color from theme */
+    padding: 20px 0; /* Padding for spacing */
+}
+
+/* Styling for links in the footer */
+.footer-background a {
+    color: var(--primary); /* Use primary color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-background a:hover {
+    color: var(--secondary); /* Use secondary color on hover */
+}
+
+.footer-background{
+    border-radius:  20px 20px  0 0!important;
+}
+
+.footerImg{
+    /* width: 100%; */
+    height: 100px;
+    border-radius: 25px;
+}
+
+.footerList, .footerheader{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footerHeader1{
+    padding-left: 100px;
+}

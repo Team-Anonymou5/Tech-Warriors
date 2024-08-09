@@ -1,0 +1,13 @@
+/* setting primary, secondary, and background for dark theme with #0A0A0A background */
+
+:root {
+  --primary: linear-gradient(45deg, #005F87, #004239, #005F87); /* Deep Cyan to Dark Teal Gradient */
+  --secondary: #133D33; /* Dark Green */
+  --background: #0A0A0A; /* Very Dark Gray */
+  --text: #B0C4C9; /* Muted Light Cyan for readability */
+  
+  /* font size */
+  --fs-1: 1.2rem; /* Body text */
+  --fs-2: 2rem;   /* Headline */
+  --fs-3: 1.5rem; /* Sub-headline */
+}

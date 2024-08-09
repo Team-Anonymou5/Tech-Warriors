@@ -1,0 +1,21 @@
+/* FooterComponent.css */
+
+@import './theme.css'; /* Import the theme colors */
+
+/* Apply theme colors to the footer */
+.footer-background {
+    background-color: var(--primary); /* Use background from theme */
+    color: var(--text); /* Use text color from theme */
+    padding: 20px 0; /* Add some padding for spacing */
+}
+
+/* Styling for links in the footer */
+.footer-background a {
+    color: var(--primary); /* Use primary color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-background a:hover {
+    color: var(--secondary); /* Use secondary color on hover */
+}

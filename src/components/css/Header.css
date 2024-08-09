@@ -1,0 +1,25 @@
+@import url("./theme.css");
+.header {
+    width: 100%;
+    height: auto;
+    /* min-height: 200px; */
+    /* background: url("../img/head2.png"); */
+    background: var(--primary);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+
+
+

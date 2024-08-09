@@ -6,6 +6,7 @@ import AllHackathons from './components/AllHackathons';
 import HackathonDetailsPage from './components/HackathonDetailsPage';
 import { fetchAllHackathons } from './firebase/firebaseUtils';
 import Header from './components/Header';
+import  Footer  from './components/Footer';
 
 function App() {
   const [hackathons, setHackathons] = useState([]);
@@ -31,6 +32,7 @@ function App() {
           <Route path="/hackathon/:id" element={<HackathonDetailsPage hackathons={hackathons} />} />
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 }
